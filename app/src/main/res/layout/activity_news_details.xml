@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsDetails"
+    android:background="@drawable/three_color"
+    >
+
+    <RelativeLayout
+        android:id="@+id/layCover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        >
+
+        <ImageView
+            android:id="@+id/coverImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/jpg"
+            android:scaleType="centerCrop"
+
+            />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="জানুয়ারিতে মার্কিন সেনেটে সাক্ষ্য দেবেন টিকটক ও মেটার সিইও"
+            android:padding="10dp"
+            android:background="#86000000"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:textSize="18sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layCover"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/tvDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="start"
+                android:padding="10dp"
+                android:text="বুধবার সেনেটের জুডিশিয়ারি কমিটি বলেছে, অনলাইনে শিশু নিপিড়ণের ঘটনা নিয়ে প্রস্তাবিত এ শুনানি হবে ২০২৪ সালের ৩১ জানুয়ারি।"
+                android:textColor="#000000"
+
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="12dp"
+        android:backgroundTint="#179E005F"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+
+        android:src="@drawable/voice_drk"
+        >
+
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+
+
+</RelativeLayout>

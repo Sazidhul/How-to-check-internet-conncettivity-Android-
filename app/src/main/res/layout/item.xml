@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/layItem"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/three_color"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        >
+
+        <ImageView
+            android:id="@+id/itemCover"
+            android:layout_width="120dp"
+            android:layout_height="99dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/jpg"
+            android:scaleType="centerCrop"
+            />
+
+        <LinearLayout
+            android:layout_width="319dp"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:orientation="vertical"
+
+            >
+
+
+            <TextView
+                android:id="@+id/itemCat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F6450D"
+                android:paddingLeft="10dp"
+                android:paddingTop="2dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="2dp"
+                android:text="CAT"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="5dp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/itemTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="জানুয়ারিতে মার্কিন সেনেটে সাক্ষ্য দেবেন টিকটক ও মেটার সিইও"
+                android:textSize="15sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/itemDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="জানুয়ারিতে মার্কিন সেনেটে সাক্ষ্য দেবেন টিকটক ও মেটার সিইও"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_margin="2dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
